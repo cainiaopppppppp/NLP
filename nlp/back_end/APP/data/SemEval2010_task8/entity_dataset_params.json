@@ -1,0 +1,5 @@
+{
+    "train_size": 8000,
+    "test_size": 2717,
+    "entity_vocab_size": 7858
+}

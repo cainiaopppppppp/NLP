@@ -1,0 +1,533 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<!-- base -->
+<title>Relation 4: Content-Container...</title>
+<style type="text/css">
+/* default css */
+table {
+font-size: 1em;
+line-height: inherit;
+border-collapse: collapse;
+}
+tr {
+text-align: left;
+}
+div, address, ol, ul, li, option, select {
+margin-top: 0px;
+margin-bottom: 0px;
+}
+p {
+margin: 0px;
+}
+pre {
+font-family: Courier New;
+white-space: pre-wrap;
+margin:0;
+}
+body {
+margin: 6px;
+padding: 0px;
+font-family: Verdana, sans-serif;
+font-size: 10pt;
+background-color: #ffffff;
+}
+img {
+-moz-force-broken-image-icon: 1;
+}
+@media screen {
+html.pageview {
+background-color: #f3f3f3 !important;
+}
+body {
+min-height: 1100px;
+counter-reset: __goog_page__;
+}
+* html body {
+height: 1100px;
+}
+.pageview body {
+border-top: 1px solid #ccc;
+border-left: 1px solid #ccc;
+border-right: 2px solid #bbb;
+border-bottom: 2px solid #bbb;
+width: 648px !important;
+margin: 15px auto 25px;
+padding: 40px 50px;
+}
+/* IE6 */
+* html {
+overflow-y: scroll;
+}
+* html.pageview body {
+overflow-x: auto;
+}
+/* Prevent repaint errors when scrolling in Safari. This "Star-7" css hack
+targets Safari 3.1, but not WebKit nightlies and presumably Safari 4.
+That's OK because this bug is fixed in WebKit nightlies/Safari 4 :-). */
+html*#wys_frame::before {
+content: '\A0';
+position: fixed;
+overflow: hidden;
+width: 0;
+height: 0;
+top: 0;
+left: 0;
+}
+.writely-callout-data {
+display: none;
+*display: inline-block;
+*width: 0;
+*height: 0;
+*overflow: hidden;
+}
+.writely-footnote-marker {
+background-image: url('images/footnote_doc_icon.gif');
+background-color: transparent;
+background-repeat: no-repeat;
+width: 7px;
+overflow: hidden;
+height: 16px;
+vertical-align: top;
+-moz-user-select: none;
+}
+.editor .writely-footnote-marker {
+cursor: move;
+}
+.writely-footnote-marker-highlight {
+background-position: -15px 0;
+-moz-user-select: text;
+}
+.writely-footnote-hide-selection ::-moz-selection, .writely-footnote-hide-selection::-moz-selection {
+background: transparent;
+}
+.writely-footnote-hide-selection ::selection, .writely-footnote-hide-selection::selection {
+background: transparent;
+}
+.writely-footnote-hide-selection {
+cursor: move;
+}
+.editor .writely-comment-yellow {
+background-color: #FF9;
+background-position: -240px 0;
+}
+.editor .writely-comment-yellow-hover {
+background-color: #FF0;
+background-position: -224px 0;
+}
+.editor .writely-comment-blue {
+background-color: #C0D3FF;
+background-position: -16px 0;
+}
+.editor .writely-comment-blue-hover {
+background-color: #6292FE;
+background-position: 0 0;
+}
+.editor .writely-comment-orange {
+background-color: #FFDEAD;
+background-position: -80px 0;
+}
+.editor .writely-comment-orange-hover {
+background-color: #F90;
+background-position: -64px 0;
+}
+.editor .writely-comment-green {
+background-color: #99FBB3;
+background-position: -48px 0;
+}
+.editor .writely-comment-green-hover {
+background-color: #00F442;
+background-position: -32px 0;
+}
+.editor .writely-comment-cyan {
+background-color: #CFF;
+background-position: -208px 0;
+}
+.editor .writely-comment-cyan-hover {
+background-color: #0FF;
+background-position: -192px 0;
+}
+.editor .writely-comment-purple {
+background-color: #EBCCFF;
+background-position: -144px 0;
+}
+.editor .writely-comment-purple-hover {
+background-color: #90F;
+background-position: -128px 0;
+}
+.editor .writely-comment-magenta {
+background-color: #FCF;
+background-position: -112px 0;
+}
+.editor .writely-comment-magenta-hover {
+background-color: #F0F;
+background-position: -96px 0;
+}
+.editor .writely-comment-red {
+background-color: #FFCACA;
+background-position: -176px 0;
+}
+.editor .writely-comment-red-hover {
+background-color: #FF7A7A;
+background-position: -160px 0;
+}
+.editor .writely-comment-marker {
+background-image: url('images/markericons_horiz.gif');
+background-color: transparent;
+padding-right: 11px;
+background-repeat: no-repeat;
+width: 16px;
+height: 16px;
+-moz-user-select: none;
+}
+.editor .writely-comment-hidden {
+padding: 0;
+background: none;
+}
+.editor .writely-comment-marker-hidden {
+background: none;
+padding: 0;
+width: 0;
+}
+.editor .writely-comment-none {
+opacity: .2;
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+-moz-opacity: .2;
+}
+.editor .writely-comment-none-hover {
+opacity: .2;
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+-moz-opacity: .2;
+}
+.br_fix span+br:not(:-moz-last-node) {
+position:relative;
+left: -1ex
+}
+#cb-p-tgt {
+font-size: 8pt;
+padding: .4em;
+background-color: #ddd;
+color: #333;
+}
+#cb-p-tgt-can {
+text-decoration: underline;
+color: #36c;
+font-weight: bold;
+margin-left: 2em;
+}
+#cb-p-tgt .spin {
+width: 16px;
+height: 16px;
+background: url(//ssl.gstatic.com/docs/clipboard/spin_16o.gif) no-repeat;
+}
+}
+h6 { font-size: 8pt }
+h5 { font-size: 8pt }
+h4 { font-size: 10pt }
+h3 { font-size: 12pt }
+h2 { font-size: 14pt }
+h1 { font-size: 18pt }
+blockquote {padding: 10px; border: 1px #DDD dashed }
+.webkit-indent-blockquote { border: none; }
+a img {border: 0}
+.pb {
+border-width: 0;
+page-break-after: always;
+/* We don't want this to be resizeable, so enforce a width and height
+using !important */
+height: 1px !important;
+width: 100% !important;
+}
+.editor .pb {
+border-top: 1px dashed #C0C0C0;
+border-bottom: 1px dashed #C0C0C0;
+}
+div.google_header, div.google_footer {
+position: relative;
+margin-top: 1em;
+margin-bottom: 1em;
+}
+/* Table of contents */
+.editor div.writely-toc {
+background-color: #f3f3f3;
+border: 1px solid #ccc;
+}
+.writely-toc > ol {
+padding-left: 3em;
+font-weight: bold;
+}
+ol.writely-toc-subheading {
+padding-left: 1em;
+font-weight: normal;
+}
+/* IE6 only */
+* html writely-toc ol {
+list-style-position: inside;
+}
+.writely-toc-none {
+list-style-type: none;
+}
+.writely-toc-decimal {
+list-style-type: decimal;
+}
+.writely-toc-upper-alpha {
+list-style-type: upper-alpha;
+}
+.writely-toc-lower-alpha {
+list-style-type: lower-alpha;
+}
+.writely-toc-upper-roman {
+list-style-type: upper-roman;
+}
+.writely-toc-lower-roman {
+list-style-type: lower-roman;
+}
+.writely-toc-disc {
+list-style-type: disc;
+}
+/* Ordered lists converted to numbered lists can preserve ordered types, and
+vice versa. This is confusing, so disallow it */
+ul[type="i"], ul[type="I"], ul[type="1"], ul[type="a"], ul[type="A"] {
+list-style-type: disc;
+}
+ol[type="disc"], ol[type="circle"], ol[type="square"] {
+list-style-type: decimal;
+}
+/* end default css */
+/* custom css */
+/* end custom css */
+/* ui edited css */
+body {
+font-family: Verdana;
+font-size: 10.0pt;
+line-height: normal;
+background-color: #ffffff;
+}
+/* end ui edited css */
+/* editor CSS */
+.editor a:visited {color: #551A8B}
+.editor table.zeroBorder {border: 1px dotted gray}
+.editor table.zeroBorder td {border: 1px dotted gray}
+.editor table.zeroBorder th {border: 1px dotted gray}
+.editor div.google_header, .editor div.google_footer {
+border: 2px #DDDDDD dashed;
+position: static;
+width: 100%;
+min-height: 2em;
+}
+.editor .misspell {background-color: yellow}
+.editor .writely-comment {
+font-size: 9pt;
+line-height: 1.4;
+padding: 1px;
+border: 1px dashed #C0C0C0
+}
+/* end editor CSS */
+</style>
+<style>
+body {
+margin: 0px;
+}
+#doc-contents {
+margin: 6px;
+}
+#google-view-footer {
+clear: both;
+border-top: thin solid;
+padding-top: 0.3em;
+padding-bottom: 0.3em;
+}
+a.google-small-link:link, a.google-small-link:visited {
+color:#112ABB;
+font-family:Arial,Sans-serif;
+font-size:11px !important;
+}
+body, p, div, td {
+direction: inherit;
+}
+@media print {
+#google-view-footer {
+display: none;
+}
+}
+</style>
+<script>
+function viewOnLoad() {
+if (document.location.href.indexOf('spi=1') != -1) {
+if (navigator.userAgent.toLowerCase().indexOf('msie') != -1) {
+window.print();
+} else {
+window.setTimeout(window.print, 10);
+}
+}
+if (document.location.href.indexOf('hgd=1') != -1) {
+var footer = document.getElementById("google-view-footer");
+if (footer) {
+footer.style.display = 'none';
+}
+}
+}
+</script>
+</head><body onload="window.jstiming.load.tick('ol'); window.jstiming.report(window.jstiming.load, null, document.location.protocol == 'https:' ? 'https://gg.google.com/csi' : null);">
+<div id="doc-contents">
+<h1>
+Relation 4: Content-Container
+</h1>
+<h3 style="color: rgb(0, 0, 0); font-weight: normal;">
+<font size="4"><b>Preamble</b></font></h3><h3 style="color: rgb(0, 0, 0); font-weight: normal;"><font size="2">www.merriam-webster.com/</font><font size="3"><font size="2"> defines "contain" as "have within, hold, comprise, include". Thus, a container must enclose the thing it
+contains. Webster also defines
+"container" as "receptacle (as a box or jar) for holding goods;
+portable compartment in which freight is placed (as on a train or ship)
+for convenience of movement".</font>
+</font></h3>
+<h3 style="color: rgb(0, 0, 0); font-weight: normal;"><font size="5"><b><b>Definition</b></b></font></h3><font style="color: rgb(0, 0, 0);" color="green">Content-Container(X, Y) is true for a sentence S that mentions entities X and Y if and only if<br>
+<br>
+</font>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+(1) <i>S</i>, <i>X</i> and <i>Y</i> are in accordance with the general annotation guidelines (<i>http://docs.google.com/Doc?docid=dfhkmm46_0f63mfvf7</i>)
+</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+<br>
+</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+(2) the situation described in <i>S</i> entails that <i>X</i> is or was (usually temporarily) stored or carried inside Y.<br>
+</p>
+<h3>
+<font style="color: rgb(0, 0, 0);" size="3" color="green"><b>Definition </b></font><font size="3">–</font><font style="color: rgb(0, 0, 0);" size="3" color="green"><b> Restrictions</b></font>
+</h3>
+<font style="color: rgb(0, 0, 0);" color="green">(a) The container must
+be clearly delineated in space (so for example atmosphere, sea or cloud
+are locations rather than containers).<br>
+<br>
+(b) There is strong preference against treating legal entities (people and institutions) as content.<br>
+<br>
+(c) There is weak preference against treating buildings and vehicles as containers. Rooms are generally acceptable.<br>
+</font>
+<p>
+&nbsp;
+</p>
+<p>
+<font style="color: rgb(0, 0, 0);" color="green">(d) The content may be
+removed from the container without significantly changing the nature of
+the container; more precisely, the content is not affixed to the
+container, nor it is usually considered to be part of the container.</font>
+</p>
+<h3>
+<font style="color: rgb(0, 0, 0);" size="3" color="green"><b>Definition </b></font><font size="3">–</font><font style="color: rgb(0, 0, 0);" size="3" color="green"><b> N</b></font><font style="color: rgb(0, 0, 0);" size="3" color="green"><b>otes</b></font>
+</h3>
+<font style="color: rgb(0, 0, 0);" color="green">(i) The relation
+applies equally well to physical content and to abstract content. In
+the latter case metonymy can usually be found in the sentence.<br>
+<br>
+(ii) </font><font style="color: rgb(0, 0, 0);" color="green">As the restrictions suggest, the relation may sometimes be hard to distinguish from part-whole relations,</font> Component-Whole and Member-Collection<font style="color: rgb(0, 0, 0);" color="green">.</font><h3>
+<font style="color: rgb(0, 0, 0);" size="3" color="green"><b>Definition </b></font><font size="3">–</font><font style="color: rgb(0, 0, 0);" size="3" color="green"><b> Overlaps</b></font>
+</h3>
+<p>
+Despite of (d) the Content-Container relation may overlap with the
+Part-Whole relations (e.g. Component-Whole and Member-Collection). In
+fact, in some cases it might not be clear whether an element is part
+(integral part or member) of another element or whether a functional
+relation holds between them.<br>
+</p>
+<h3><font size="5">Positive Examples
+</font></h3>
+"The &lt;e1&gt;apples&lt;/e1&gt; are in the &lt;e2&gt;basket&lt;/e2&gt;."<br>
+Content-Container(e1, e2)<br>
+<b>Comment:</b> This is a prototypical example of Content-Container.<br>
+<br>
+"The &lt;e1&gt;plane&lt;/e1&gt; contained precious &lt;e2&gt;cargo&lt;/e2&gt;."<br>
+Content-Container(e2, e1)<br>
+<b>Comment:</b> While a plane is a vehicle, a cargo clearly obeys restriction (d).<br>
+<br>
+"The &lt;e1&gt;theory&lt;/e1&gt; contained many &lt;e2&gt;flaws&lt;/e2&gt;."<br>
+Content-Container(e2, e1)<br><b>Comment:</b> The flaws are "contained in" the theory in an abstract
+sense: see note (i). Part (2) of the definition is fulfilled if we
+assume that the flaws can be eliminated and are not an integral part of
+the theory. We might also argue that flaws do not serve a purpose in the
+theory, so condition (d) holds and we exclude Component-Whole.<br>
+<br>
+"I emptied the &lt;e1&gt;wine&lt;/e1&gt; &lt;e2&gt;bottle&lt;/e2&gt; into my glass and toasted my friends."<br>
+Content-Container(e1, e2)<br>
+<b>Comment:</b> This satisfies (2), because the sentence entails that
+the bottle contained wine. It also satisfies (d), because an empty
+bottle is still a bottle.<br>
+<h3>
+Near-miss negative examples
+</h3>
+"The &lt;e1&gt;passengers&lt;/e1&gt; will soon get out of the &lt;e2&gt;car&lt;/e2&gt;."<br>
+Other(e1, e2)<br>
+<b>Comment:</b> We prefer Entity-Location(e1, e2) because of
+restriction (b). We assign Other, because Entity-Location is not on the
+list of nine relations we work with. [Content-Container(e1, e2) would
+be possible under a much less strict interpretation.]<br>
+<br>
+"The &lt;e1&gt;plane&lt;/e1&gt; contained an innovative turbine &lt;e2&gt;engine&lt;/e2&gt;."<br>
+Component-Whole(e2, e1)<br>
+<b>Comment:</b> This sentence violates (d) in the definition of
+Content-Container. If you remove the engine from a plane, you have
+changed its nature. On the other hand, the engine is an integral and
+functional part of the plane.<br>
+<br>
+"I think I drank about a &lt;e1&gt;bottle&lt;/e1&gt; of &lt;e2&gt;wine&lt;/e2&gt;."<br>
+Other(e2, e1)<br>
+<b>Comment:</b> This sentence violates (2) in the definition of
+Content-Container. The word "bottle" is used as a unit of measurement,
+so the sentence does not entail that the wine was inside a bottle. We
+have Measure-Measured(e1, e2) -- a bottle is a measure of the quantity
+of wine -- but we assign Other, since Measure-Measured is not on the
+list of nine relations.<br>
+<br>
+"The &lt;e1&gt;macadamia nuts&lt;/e1&gt; in the
+&lt;e2&gt;cake&lt;/e2&gt; also make it necessary to have a very sharp
+knife to cut through the cake neatly."<br>
+Component-Whole(e1, e2)<br>
+<b>Comment:</b> This sentence violates (d) in the definition of
+Content-Container. If you remove the nuts from the cake, you have
+changed the nature of the cake. The nuts are ingredients/components of
+the cake. Stuff-Object is not true because in this case nuts can be
+physically separated from the cake.<strike><br></strike>
+<br>
+"Ornette Coleman's crazy &lt;e1&gt;music&lt;/e1&gt; was perfect in Cronenberg's &lt;e2&gt;film&lt;/e2&gt; <i>Naked Lunch</i>."<br>
+Component-Whole(e1, e2)<br>
+<b>Comment:</b> This example is problematic for two reasons. First, it
+is only true in an abstract sense that the music is "inside" the film.
+Second, it could be argued that removing the music from the film would
+change the nature of the film. Still, the music is a functional and
+separable component of the film. <br>
+<br>
+"The &lt;e1&gt;apples&lt;/e1&gt; were stacked in a &lt;e2&gt;pyramid&lt;/e2&gt;."<br>
+Component-Whole(e1, e2)<br>
+<b>Comment:</b> The sentence is probably talking about a pyramid made
+of apples. It is possible, but less likely, that the apples are stored
+in a pyramidal container. This sentence violates (d) in the definition
+of Content-Container. If you remove the apples, the pyramid is gone.
+The pyramid is made of apples -- has them as components. Given that the
+apples pyramid has a structure, and apples are in a specific spatial
+position with respect to each other, we exclude Member-Collection.<br>
+<br>
+"The &lt;e1&gt;book&lt;/e1&gt; contained a &lt;e2&gt;chapter&lt;/e2&gt; on ants."<br>
+Component-Whole(e2, e1)<br>
+<b>Comment:</b> It is reasonable to say that the chapter is inside the
+book, so condition (2) is fulfilled. Removing a chapter from a book,
+however, likely changes the nature of the book, so condition (d) is
+violated. It is a prototypical example, because the chapter is
+definitely a component of the book.<br>
+<br>
+"I broke the &lt;e1&gt;wine&lt;/e1&gt; &lt;e2&gt;bottle&lt;/e2&gt;."<br>
+Other(e1, e2)<br>
+<b>Comment:</b> We may assume that the wine bottle was intended to hold
+wine, but the sentence does not tell us whether the bottle holds wine
+or even whether it may have held wine in the past. Therefore condition
+(2) is violated. Instead we could say Purpose-Tool(e1, e2) -- the
+bottle is a tool for holding wine -- but lacking this relation of the
+list, we assign Other.<br><br>
+"Deep inside the &lt;e1&gt;forest&lt;/e1&gt; there is a huge &lt;e2&gt;tree&lt;/e2&gt; where children used to play."<br>
+Member-Collection(e2, e1)<br>
+<b>Comment: </b>This sentence violates condition (d). Removing a tree
+from the forest does change the forest. The tree is part of the forest,
+specifically a member of the forest.<br><br>
+<br clear="all">
+</div>
+</body></html>

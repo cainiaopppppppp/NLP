@@ -1,0 +1,540 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<!-- base -->
+<title>Relation 5: Entity-Origin - def</title>
+<style type="text/css">
+/* default css */
+table {
+font-size: 1em;
+line-height: inherit;
+border-collapse: collapse;
+}
+tr {
+text-align: left;
+}
+div, address, ol, ul, li, option, select {
+margin-top: 0px;
+margin-bottom: 0px;
+}
+p {
+margin: 0px;
+}
+pre {
+font-family: Courier New;
+white-space: pre-wrap;
+margin:0;
+}
+body {
+margin: 6px;
+padding: 0px;
+font-family: Verdana, sans-serif;
+font-size: 10pt;
+background-color: #ffffff;
+}
+img {
+-moz-force-broken-image-icon: 1;
+}
+@media screen {
+html.pageview {
+background-color: #f3f3f3 !important;
+}
+body {
+min-height: 1100px;
+counter-reset: __goog_page__;
+}
+* html body {
+height: 1100px;
+}
+.pageview body {
+border-top: 1px solid #ccc;
+border-left: 1px solid #ccc;
+border-right: 2px solid #bbb;
+border-bottom: 2px solid #bbb;
+width: 648px !important;
+margin: 15px auto 25px;
+padding: 40px 50px;
+}
+/* IE6 */
+* html {
+overflow-y: scroll;
+}
+* html.pageview body {
+overflow-x: auto;
+}
+/* Prevent repaint errors when scrolling in Safari. This "Star-7" css hack
+targets Safari 3.1, but not WebKit nightlies and presumably Safari 4.
+That's OK because this bug is fixed in WebKit nightlies/Safari 4 :-). */
+html*#wys_frame::before {
+content: '\A0';
+position: fixed;
+overflow: hidden;
+width: 0;
+height: 0;
+top: 0;
+left: 0;
+}
+.writely-callout-data {
+display: none;
+*display: inline-block;
+*width: 0;
+*height: 0;
+*overflow: hidden;
+}
+.writely-footnote-marker {
+background-image: url('images/footnote_doc_icon.gif');
+background-color: transparent;
+background-repeat: no-repeat;
+width: 7px;
+overflow: hidden;
+height: 16px;
+vertical-align: top;
+-moz-user-select: none;
+}
+.editor .writely-footnote-marker {
+cursor: move;
+}
+.writely-footnote-marker-highlight {
+background-position: -15px 0;
+-moz-user-select: text;
+}
+.writely-footnote-hide-selection ::-moz-selection, .writely-footnote-hide-selection::-moz-selection {
+background: transparent;
+}
+.writely-footnote-hide-selection ::selection, .writely-footnote-hide-selection::selection {
+background: transparent;
+}
+.writely-footnote-hide-selection {
+cursor: move;
+}
+.editor .writely-comment-yellow {
+background-color: #FF9;
+background-position: -240px 0;
+}
+.editor .writely-comment-yellow-hover {
+background-color: #FF0;
+background-position: -224px 0;
+}
+.editor .writely-comment-blue {
+background-color: #C0D3FF;
+background-position: -16px 0;
+}
+.editor .writely-comment-blue-hover {
+background-color: #6292FE;
+background-position: 0 0;
+}
+.editor .writely-comment-orange {
+background-color: #FFDEAD;
+background-position: -80px 0;
+}
+.editor .writely-comment-orange-hover {
+background-color: #F90;
+background-position: -64px 0;
+}
+.editor .writely-comment-green {
+background-color: #99FBB3;
+background-position: -48px 0;
+}
+.editor .writely-comment-green-hover {
+background-color: #00F442;
+background-position: -32px 0;
+}
+.editor .writely-comment-cyan {
+background-color: #CFF;
+background-position: -208px 0;
+}
+.editor .writely-comment-cyan-hover {
+background-color: #0FF;
+background-position: -192px 0;
+}
+.editor .writely-comment-purple {
+background-color: #EBCCFF;
+background-position: -144px 0;
+}
+.editor .writely-comment-purple-hover {
+background-color: #90F;
+background-position: -128px 0;
+}
+.editor .writely-comment-magenta {
+background-color: #FCF;
+background-position: -112px 0;
+}
+.editor .writely-comment-magenta-hover {
+background-color: #F0F;
+background-position: -96px 0;
+}
+.editor .writely-comment-red {
+background-color: #FFCACA;
+background-position: -176px 0;
+}
+.editor .writely-comment-red-hover {
+background-color: #FF7A7A;
+background-position: -160px 0;
+}
+.editor .writely-comment-marker {
+background-image: url('images/markericons_horiz.gif');
+background-color: transparent;
+padding-right: 11px;
+background-repeat: no-repeat;
+width: 16px;
+height: 16px;
+-moz-user-select: none;
+}
+.editor .writely-comment-hidden {
+padding: 0;
+background: none;
+}
+.editor .writely-comment-marker-hidden {
+background: none;
+padding: 0;
+width: 0;
+}
+.editor .writely-comment-none {
+opacity: .2;
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+-moz-opacity: .2;
+}
+.editor .writely-comment-none-hover {
+opacity: .2;
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+-moz-opacity: .2;
+}
+.br_fix span+br:not(:-moz-last-node) {
+position:relative;
+left: -1ex
+}
+#cb-p-tgt {
+font-size: 8pt;
+padding: .4em;
+background-color: #ddd;
+color: #333;
+}
+#cb-p-tgt-can {
+text-decoration: underline;
+color: #36c;
+font-weight: bold;
+margin-left: 2em;
+}
+#cb-p-tgt .spin {
+width: 16px;
+height: 16px;
+background: url(//ssl.gstatic.com/docs/clipboard/spin_16o.gif) no-repeat;
+}
+}
+h6 { font-size: 8pt }
+h5 { font-size: 8pt }
+h4 { font-size: 10pt }
+h3 { font-size: 12pt }
+h2 { font-size: 14pt }
+h1 { font-size: 18pt }
+blockquote {padding: 10px; border: 1px #DDD dashed }
+.webkit-indent-blockquote { border: none; }
+a img {border: 0}
+.pb {
+border-width: 0;
+page-break-after: always;
+/* We don't want this to be resizeable, so enforce a width and height
+using !important */
+height: 1px !important;
+width: 100% !important;
+}
+.editor .pb {
+border-top: 1px dashed #C0C0C0;
+border-bottom: 1px dashed #C0C0C0;
+}
+div.google_header, div.google_footer {
+position: relative;
+margin-top: 1em;
+margin-bottom: 1em;
+}
+/* Table of contents */
+.editor div.writely-toc {
+background-color: #f3f3f3;
+border: 1px solid #ccc;
+}
+.writely-toc > ol {
+padding-left: 3em;
+font-weight: bold;
+}
+ol.writely-toc-subheading {
+padding-left: 1em;
+font-weight: normal;
+}
+/* IE6 only */
+* html writely-toc ol {
+list-style-position: inside;
+}
+.writely-toc-none {
+list-style-type: none;
+}
+.writely-toc-decimal {
+list-style-type: decimal;
+}
+.writely-toc-upper-alpha {
+list-style-type: upper-alpha;
+}
+.writely-toc-lower-alpha {
+list-style-type: lower-alpha;
+}
+.writely-toc-upper-roman {
+list-style-type: upper-roman;
+}
+.writely-toc-lower-roman {
+list-style-type: lower-roman;
+}
+.writely-toc-disc {
+list-style-type: disc;
+}
+/* Ordered lists converted to numbered lists can preserve ordered types, and
+vice versa. This is confusing, so disallow it */
+ul[type="i"], ul[type="I"], ul[type="1"], ul[type="a"], ul[type="A"] {
+list-style-type: disc;
+}
+ol[type="disc"], ol[type="circle"], ol[type="square"] {
+list-style-type: decimal;
+}
+/* end default css */
+/* custom css */
+/* end custom css */
+/* ui edited css */
+body {
+font-family: Verdana;
+font-size: 10.0pt;
+line-height: normal;
+background-color: #ffffff;
+}
+/* end ui edited css */
+/* editor CSS */
+.editor a:visited {color: #551A8B}
+.editor table.zeroBorder {border: 1px dotted gray}
+.editor table.zeroBorder td {border: 1px dotted gray}
+.editor table.zeroBorder th {border: 1px dotted gray}
+.editor div.google_header, .editor div.google_footer {
+border: 2px #DDDDDD dashed;
+position: static;
+width: 100%;
+min-height: 2em;
+}
+.editor .misspell {background-color: yellow}
+.editor .writely-comment {
+font-size: 9pt;
+line-height: 1.4;
+padding: 1px;
+border: 1px dashed #C0C0C0
+}
+/* end editor CSS */
+</style>
+<style>
+body {
+margin: 0px;
+}
+#doc-contents {
+margin: 6px;
+}
+#google-view-footer {
+clear: both;
+border-top: thin solid;
+padding-top: 0.3em;
+padding-bottom: 0.3em;
+}
+a.google-small-link:link, a.google-small-link:visited {
+color:#112ABB;
+font-family:Arial,Sans-serif;
+font-size:11px !important;
+}
+body, p, div, td {
+direction: inherit;
+}
+@media print {
+#google-view-footer {
+display: none;
+}
+}
+</style>
+<script>
+function viewOnLoad() {
+if (document.location.href.indexOf('spi=1') != -1) {
+if (navigator.userAgent.toLowerCase().indexOf('msie') != -1) {
+window.print();
+} else {
+window.setTimeout(window.print, 10);
+}
+}
+if (document.location.href.indexOf('hgd=1') != -1) {
+var footer = document.getElementById("google-view-footer");
+if (footer) {
+footer.style.display = 'none';
+}
+}
+}
+</script>
+</head><body onload="window.jstiming.load.tick('ol'); window.jstiming.report(window.jstiming.load, null, document.location.protocol == 'https:' ? 'https://gg.google.com/csi' : null);">
+<div id="doc-contents">
+<h1>
+Relation 5: Entity-Origin</h1><h3 style="color: rgb(0, 0, 0);">Preamble
+</h3>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(0, 0, 0);">
+Moldovan et al. (2004) have a relation "SOURCE/FROM" defined as "a
+place where an entity comes from" (e.g., "olive oil" or "I got it from
+China"). Levi (1979) has FROM as one of her relations; it refers to a
+source and acts as an ablative, e.g., "olive oil", "test-tube baby",
+"apple seed", "rural visitors". Warren (1978) has an Origin-OBJ class
+(e.g., "seafood"), which is a sub-class of her top-level class
+Location. FrameNet also has a frame Origin, where an Entity begins its
+existence in the context of an Origin, which can be a place, culture,
+text etc.:&nbsp;
+http://framenet.icsi.berkeley.edu/index.php?option=com_wrapper&amp;Itemid=118&amp;frame=Origin.</p><h3 style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(0, 0, 0);">Definition
+</h3>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(0, 0, 0);">
+Entity-Origin(<i>X</i>, <i>Y</i>) is true for a sentence <i>S</i> that mentions the entities <i>X</i> and <i>Y</i> if and only if</p><p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(0, 0, 0);"><br></p><p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(0, 0, 0);">(1) <i>S</i>, <i>X</i> and <i>Y</i> are in accordance with the general annotation guidelines (see document<i> http://docs.google.com/Doc?docid=dfhkmm46_0f63mfvf7</i>)</p><p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(0, 0, 0);"><br>
+</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(0, 0, 0);">
+(2) the situation described in <i>S</i> entails
+that <i>Y</i> is the origin of an entity<i> X</i> (rather than just its location), and <i>X</i> is coming or derived from that origin.</p><p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(0, 0, 0);">
+</p>
+<h3 style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(0, 0, 0);">
+Definition – Restrictions
+</h3><p style="color: rgb(0, 0, 0);"><font size="2"><span style="font-family: Verdana;">(a)</span></font><font style="font-family: Verdana;" size="2" face="Times New Roman"><span style="font-style: normal; font-weight: normal;">&nbsp;
+</span></font><font size="2"><span style="font-family: Verdana;" dir="ltr">The Origin can be:</span></font></p>
+<ol style="color: rgb(0, 0, 0);"><li><p><font size="2">abstract (e.g., "intuitions/<i><i>X</i></i>
+from mathematics/<i><i>Y</i></i>")</font><font size="2">,</font></p></li><li><p><font size="2"><span dir="ltr">physical (spatial/geographical) location
+(e.g., "storm/<i><i>X</i></i> from the
+desert/<i><i>Y</i></i>")&nbsp;</span></font></p></li><li><p><font size="2">material (e.g., "peanut/<i><i>Y</i></i>
+butter/<i><i>X</i></i>")</font></p></li><li><font size="2">a person or company (e.g. "tablets/Y from a dentist/X")<br></font></li><li><font size="2">temporal </font>(e.g., "homes/<i>X</i> from a simpler time/<i>Y</i>"). </li></ol>
+<br style="color: rgb(0, 0, 0);"><p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(0, 0, 0);"><font size="2">Most
+of these categories are subject to specific restrictions to delimit
+Entity-Origin from potentially overlapping relations,</font></p><p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(0, 0, 0);"><font size="2">which are made precise by the following restrictions.<br></font></p><p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(0, 0, 0);"><font size="2"><br></font></p><span style="color: rgb(0, 0, 0);">(b) As for the Entity X, it should</span><br style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);" dir="ltr"><br></span><ol style="color: rgb(0, 0, 0);"><li><span dir="ltr">NOT be at
+the Origin (in the case of spatial origins)</span>, <br><br></li><li><span dir="ltr">NOT consist
+exclusively of the Origin (in the case of material origins); equivalently, it should have undergone </span><br>substantial processing in order to produce the entity <i>X. </i>As a result, "tobacco/<i>Y</i> ash/<i>X</i>" and "peanut/<i>Y</i> butter/<i>X</i>" <br>are positive examples (because the ash does not consist of tobacco any more), but "aluminium/Y plane/X" is a near miss.<br><br></li><li>The entity <i>X</i> should NOT be part of the origin <i>Y</i>, e.g., "apple/<i>Y</i> seed/<i>X</i>", when the "seed" is separated from the "apple". <br>This restriction is meant to prevent overlaps with Component-Whole.<br><br></li><li><font size="2"><span dir="ltr">BUT the bulk of <i>X</i> should be made up from products of <i>Y</i></span><i><i>.</i></i></font> "rye/<i><i>Y</i></i>
+whiskey/<i><i>X</i></i>" is
+a positive example, while "apple/Y pancake/X" is a<br><font size="2"> negative one (because the <i><i>apples</i></i>
+are not the main source for making the <i><i>cake</i></i>)
+.</font></li></ol><div><p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(0, 0, 0);"><br></p><p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(0, 0, 0);">
+(c) <font size="2">As for the Origin Y,<br><br></font></p><ol style="color: rgb(0, 0, 0);"><li><i>Y</i> should NOT be actively involved in the process of
+bringing the entity <i>X</i> into existence <span style="background-color: rgb(255, 255, 255);">or making it available</span> (e.g., "light/<i>X</i> bulb/<i>Y</i>"<br>-- Cause-Effect, "silk/<i>X</i> worm/<i>Y</i>" -- Producer-Product). This restriction is meant to prevent overlaps with Product-Producer and Cause-Effect.<br>This
+is often particularly difficult to ascertain for person/company
+Origins. The presence of "producer-like" verbs (manufacture, generate)
+or <br>"causer-like" verbs (cause, bring about) is often good evidence against the use of Entity-Origin <br><br></li><li>To
+resolve a class of borderline cases, we consider objects emitting
+radiation/heat/light... as Causers of such emissions, not just Origins.</li></ol>
+<br style="color: rgb(0, 0, 0);"><p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(0, 0, 0);"></p><p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(0, 0, 0);"></p><p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(0, 0, 0);">
+(d) An entity can have several origins, and each of them separately
+will count as an origin.</p><p><br></p><p><font size="3"><b>Definition - Overlaps</b></font><br><br>Potentially overlapping relations: <br></p><p><br></p><p>&nbsp;* Component-Whole: distinguished by restriction (b.3)<br></p><p>&nbsp;* Product-Producer, Cause-Effect: distinguished by restrictions (c.1) and (c.2)<br></p><p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">&nbsp;*
+Communication-Topic: Only a case of apparent overlap. In contrast to
+Communication-Topic, Entity-Origin describes the relationship <br></p><p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">&nbsp;&nbsp;&nbsp; between <font style="color: rgb(0, 0, 0);" color="#0000ff">the communication and the communicator, rather than between the communication and the topic <br></font></p><p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"><font style="color: rgb(0, 0, 0);" color="#0000ff">&nbsp;&nbsp;&nbsp; ("news on the hostage crisis").</font></p><p>* Other: for locations (restriction b.1), materials (restriction b.2), flavours/types (restriction b.4)<br></p><p><br></p><h3 style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">Positive Examples
+</h3>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+"Under state law, minors are not permitted to have
+&lt;e1&gt;grain&lt;/e1&gt; &lt;e2&gt;alcohol&lt;/e2&gt;, even if a
+parent provides it to their children."
+</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+Entity-Origin(e2, e1)<br></p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+<b>Comment:</b> This is a prototypical example of a material Entity-Origin relation. Restriction (b.4) applies.
+</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+<br>
+</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+"Upon first bite Trahyn found that the cake was made with &lt;e1&gt;bacon&lt;/e1&gt; &lt;e2&gt;grease&lt;/e2&gt;. "
+</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">Entity-Origin(e2, e1)</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+<b>Comment:</b> This is a prototypical example of a material Entity-Origin relation.</p><br>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+"Scientists have also linked the recent UK epidemic to a
+&lt;e1&gt;desert&lt;/e1&gt; &lt;e2&gt;storm&lt;/e2&gt; from the
+Sahara."
+</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">Entity-Origin(e2, e1)</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+<b>Comment:</b> Here the storm has a material origin: the desert.<br></p><br>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+</p>
+<p class="MsoNormal"> "One thing SETI has agreed on is that if a
+&lt;e1&gt;message&lt;/e1&gt; from &lt;e2&gt;outer space&lt;/e2&gt; is
+discovered, once it is confirmed by scientists from outside of the
+organization to authenticate the source, the message will be made known
+to the public right away."
+</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+Entity-Origin(e1, e2)</p>
+<p class="MsoNormal"></p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+<b>Comment: </b>This is a prototypical example of a spatial/geographical Entity-Origin relation.
+</p><br>"&lt;e1&gt;The word 'naughtiness'&lt;/e1&gt; is derived from a &lt;e2&gt;word&lt;/e2&gt; meaning worthless."<br><p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">Entity-Origin(e1, e2)</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"><b>Comment: </b>This is a prototypical example of an abstract Entity-Origin relation. <br></p><h3 style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+Near-miss Negative Examples
+</h3>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+"The temple claims to have the only &lt;e1&gt;orange&lt;/e1&gt;
+&lt;e2&gt;tree&lt;/e2&gt; in Paro, and the picking of fruit from the
+tree is strictly prohibited."
+</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">Product-Producer(e1,e2)</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+<b>Comment: </b>The sentence
+violates definition restriction (c.1). Here the tree is actively involved
+in bringing the oranges into existence, and does not serve as a raw
+material.
+This is a Product-Producer relation.</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+&nbsp;
+</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+"Others note that &lt;e1&gt;apple&lt;/e1&gt; &lt;e2&gt;seeds&lt;/e2&gt; found in Anatolia were carbon dated 6500 BCE."
+</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">Component-Whole(e2,e1)</p><p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+<b>Comment:</b>
+The sentence violates definition restriction (b.3). This is
+Component-Whole, i.e. "The seeds used to be part of the apple". In
+fact, p<span style="color: rgb(0, 0, 0);">robably only the seeds were found.</span><br></p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+<br>
+</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+"Upon prior &lt;e1&gt;statement&lt;/e1&gt; from the
+&lt;e2&gt;President&lt;/e2&gt; in case of reasons of emergency,
+national security, or public interest, and solely while such reasons
+remains, the State may subject the patent to a compulsory license at
+any time and, in such case, the National Bureau of Industrial Property
+may grant the requested licenses, regardless of the patent holder's
+right to compensation..."<br><span style="color: rgb(0, 0, 0);">Product-Producer(e1,e2)</span></p>
+<p style="color: rgb(0, 0, 0);">
+<b>Comment:</b>
+The sentence violates definition restriction (c.1) where the origin
+should NOT be actively involved in the process of bringing the entity
+into existence; this is Product-Produce.</p><p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">&nbsp;</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+</p>
+<p class="western" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+"The return to Earth early Monday of the Shenzhou VI with two
+astronauts on board marked the end of stage one in China's
+&lt;e1&gt;space&lt;/e1&gt; &lt;e2&gt;odyssey&lt;/e2&gt;."
+</p>
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">Other(e1,e2)</p>
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+<b>Comment: </b>In this sentence, the space is not the
+origin, but the destination or the location of the odyssey (cf. restriction b.1). We don't have a relation for this.<br></p>
+<br>"Eventually the &lt;e1&gt;company&lt;/e1&gt; manufactured the &lt;e2&gt;machines&lt;/e2&gt;."<br><p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">Product-Producer(e2,e1)</p>
+<b>Comment:</b>
+The sentence violates definition restriction (c.1). This
+is a Product-Producer relationship.<br><br>"How can you prove that a &lt;e1&gt;gas&lt;/e1&gt; takes up &lt;e2&gt;space&lt;/e2&gt;?"<br><p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">Other(e1,e2)</p>
+<b>Comment:</b>
+The space is not the origin for the gas. This is none of our present relations.<br><br>"A
+person infected with a particular &lt;e1&gt;flu&lt;/e1&gt;
+&lt;e2&gt;virus&lt;/e2&gt; strain develops an antibody against that virus."<br>Cause-Effect(e2,e1)<br><b>Comment:</b> <i>flu</i> is a state, <i>virus</i> is a causal agent. This violates restriction (c.1), and this is an instance of Cause-Effect.<br></div><br>
+<br clear="all">
+</div>
+</body></html>

@@ -1,0 +1,643 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<!-- base -->
+<title>Relation 3: Product-Producer ...</title>
+<style type="text/css">
+/* default css */
+table {
+font-size: 1em;
+line-height: inherit;
+border-collapse: collapse;
+}
+tr {
+text-align: left;
+}
+div, address, ol, ul, li, option, select {
+margin-top: 0px;
+margin-bottom: 0px;
+}
+p {
+margin: 0px;
+}
+pre {
+font-family: Courier New;
+white-space: pre-wrap;
+margin:0;
+}
+body {
+margin: 6px;
+padding: 0px;
+font-family: Verdana, sans-serif;
+font-size: 10pt;
+background-color: #ffffff;
+}
+img {
+-moz-force-broken-image-icon: 1;
+}
+@media screen {
+html.pageview {
+background-color: #f3f3f3 !important;
+}
+body {
+min-height: 1100px;
+counter-reset: __goog_page__;
+}
+* html body {
+height: 1100px;
+}
+.pageview body {
+border-top: 1px solid #ccc;
+border-left: 1px solid #ccc;
+border-right: 2px solid #bbb;
+border-bottom: 2px solid #bbb;
+width: 648px !important;
+margin: 15px auto 25px;
+padding: 40px 50px;
+}
+/* IE6 */
+* html {
+overflow-y: scroll;
+}
+* html.pageview body {
+overflow-x: auto;
+}
+/* Prevent repaint errors when scrolling in Safari. This "Star-7" css hack
+targets Safari 3.1, but not WebKit nightlies and presumably Safari 4.
+That's OK because this bug is fixed in WebKit nightlies/Safari 4 :-). */
+html*#wys_frame::before {
+content: '\A0';
+position: fixed;
+overflow: hidden;
+width: 0;
+height: 0;
+top: 0;
+left: 0;
+}
+.writely-callout-data {
+display: none;
+*display: inline-block;
+*width: 0;
+*height: 0;
+*overflow: hidden;
+}
+.writely-footnote-marker {
+background-image: url('images/footnote_doc_icon.gif');
+background-color: transparent;
+background-repeat: no-repeat;
+width: 7px;
+overflow: hidden;
+height: 16px;
+vertical-align: top;
+-moz-user-select: none;
+}
+.editor .writely-footnote-marker {
+cursor: move;
+}
+.writely-footnote-marker-highlight {
+background-position: -15px 0;
+-moz-user-select: text;
+}
+.writely-footnote-hide-selection ::-moz-selection, .writely-footnote-hide-selection::-moz-selection {
+background: transparent;
+}
+.writely-footnote-hide-selection ::selection, .writely-footnote-hide-selection::selection {
+background: transparent;
+}
+.writely-footnote-hide-selection {
+cursor: move;
+}
+.editor .writely-comment-yellow {
+background-color: #FF9;
+background-position: -240px 0;
+}
+.editor .writely-comment-yellow-hover {
+background-color: #FF0;
+background-position: -224px 0;
+}
+.editor .writely-comment-blue {
+background-color: #C0D3FF;
+background-position: -16px 0;
+}
+.editor .writely-comment-blue-hover {
+background-color: #6292FE;
+background-position: 0 0;
+}
+.editor .writely-comment-orange {
+background-color: #FFDEAD;
+background-position: -80px 0;
+}
+.editor .writely-comment-orange-hover {
+background-color: #F90;
+background-position: -64px 0;
+}
+.editor .writely-comment-green {
+background-color: #99FBB3;
+background-position: -48px 0;
+}
+.editor .writely-comment-green-hover {
+background-color: #00F442;
+background-position: -32px 0;
+}
+.editor .writely-comment-cyan {
+background-color: #CFF;
+background-position: -208px 0;
+}
+.editor .writely-comment-cyan-hover {
+background-color: #0FF;
+background-position: -192px 0;
+}
+.editor .writely-comment-purple {
+background-color: #EBCCFF;
+background-position: -144px 0;
+}
+.editor .writely-comment-purple-hover {
+background-color: #90F;
+background-position: -128px 0;
+}
+.editor .writely-comment-magenta {
+background-color: #FCF;
+background-position: -112px 0;
+}
+.editor .writely-comment-magenta-hover {
+background-color: #F0F;
+background-position: -96px 0;
+}
+.editor .writely-comment-red {
+background-color: #FFCACA;
+background-position: -176px 0;
+}
+.editor .writely-comment-red-hover {
+background-color: #FF7A7A;
+background-position: -160px 0;
+}
+.editor .writely-comment-marker {
+background-image: url('images/markericons_horiz.gif');
+background-color: transparent;
+padding-right: 11px;
+background-repeat: no-repeat;
+width: 16px;
+height: 16px;
+-moz-user-select: none;
+}
+.editor .writely-comment-hidden {
+padding: 0;
+background: none;
+}
+.editor .writely-comment-marker-hidden {
+background: none;
+padding: 0;
+width: 0;
+}
+.editor .writely-comment-none {
+opacity: .2;
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+-moz-opacity: .2;
+}
+.editor .writely-comment-none-hover {
+opacity: .2;
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+-moz-opacity: .2;
+}
+.br_fix span+br:not(:-moz-last-node) {
+position:relative;
+left: -1ex
+}
+#cb-p-tgt {
+font-size: 8pt;
+padding: .4em;
+background-color: #ddd;
+color: #333;
+}
+#cb-p-tgt-can {
+text-decoration: underline;
+color: #36c;
+font-weight: bold;
+margin-left: 2em;
+}
+#cb-p-tgt .spin {
+width: 16px;
+height: 16px;
+background: url(//ssl.gstatic.com/docs/clipboard/spin_16o.gif) no-repeat;
+}
+}
+h6 { font-size: 8pt }
+h5 { font-size: 8pt }
+h4 { font-size: 10pt }
+h3 { font-size: 12pt }
+h2 { font-size: 14pt }
+h1 { font-size: 18pt }
+blockquote {padding: 10px; border: 1px #DDD dashed }
+.webkit-indent-blockquote { border: none; }
+a img {border: 0}
+.pb {
+border-width: 0;
+page-break-after: always;
+/* We don't want this to be resizeable, so enforce a width and height
+using !important */
+height: 1px !important;
+width: 100% !important;
+}
+.editor .pb {
+border-top: 1px dashed #C0C0C0;
+border-bottom: 1px dashed #C0C0C0;
+}
+div.google_header, div.google_footer {
+position: relative;
+margin-top: 1em;
+margin-bottom: 1em;
+}
+/* Table of contents */
+.editor div.writely-toc {
+background-color: #f3f3f3;
+border: 1px solid #ccc;
+}
+.writely-toc > ol {
+padding-left: 3em;
+font-weight: bold;
+}
+ol.writely-toc-subheading {
+padding-left: 1em;
+font-weight: normal;
+}
+/* IE6 only */
+* html writely-toc ol {
+list-style-position: inside;
+}
+.writely-toc-none {
+list-style-type: none;
+}
+.writely-toc-decimal {
+list-style-type: decimal;
+}
+.writely-toc-upper-alpha {
+list-style-type: upper-alpha;
+}
+.writely-toc-lower-alpha {
+list-style-type: lower-alpha;
+}
+.writely-toc-upper-roman {
+list-style-type: upper-roman;
+}
+.writely-toc-lower-roman {
+list-style-type: lower-roman;
+}
+.writely-toc-disc {
+list-style-type: disc;
+}
+/* Ordered lists converted to numbered lists can preserve ordered types, and
+vice versa. This is confusing, so disallow it */
+ul[type="i"], ul[type="I"], ul[type="1"], ul[type="a"], ul[type="A"] {
+list-style-type: disc;
+}
+ol[type="disc"], ol[type="circle"], ol[type="square"] {
+list-style-type: decimal;
+}
+/* end default css */
+/* custom css */
+/* end custom css */
+/* ui edited css */
+body {
+font-family: Verdana;
+font-size: 10.0pt;
+line-height: normal;
+background-color: #ffffff;
+}
+/* end ui edited css */
+/* editor CSS */
+.editor a:visited {color: #551A8B}
+.editor table.zeroBorder {border: 1px dotted gray}
+.editor table.zeroBorder td {border: 1px dotted gray}
+.editor table.zeroBorder th {border: 1px dotted gray}
+.editor div.google_header, .editor div.google_footer {
+border: 2px #DDDDDD dashed;
+position: static;
+width: 100%;
+min-height: 2em;
+}
+.editor .misspell {background-color: yellow}
+.editor .writely-comment {
+font-size: 9pt;
+line-height: 1.4;
+padding: 1px;
+border: 1px dashed #C0C0C0
+}
+/* end editor CSS */
+</style>
+<style>
+body {
+margin: 0px;
+}
+#doc-contents {
+margin: 6px;
+}
+#google-view-footer {
+clear: both;
+border-top: thin solid;
+padding-top: 0.3em;
+padding-bottom: 0.3em;
+}
+a.google-small-link:link, a.google-small-link:visited {
+color:#112ABB;
+font-family:Arial,Sans-serif;
+font-size:11px !important;
+}
+body, p, div, td {
+direction: inherit;
+}
+@media print {
+#google-view-footer {
+display: none;
+}
+}
+</style>
+<script>
+function viewOnLoad() {
+if (document.location.href.indexOf('spi=1') != -1) {
+if (navigator.userAgent.toLowerCase().indexOf('msie') != -1) {
+window.print();
+} else {
+window.setTimeout(window.print, 10);
+}
+}
+if (document.location.href.indexOf('hgd=1') != -1) {
+var footer = document.getElementById("google-view-footer");
+if (footer) {
+footer.style.display = 'none';
+}
+}
+}
+</script>
+</head><body onload="window.jstiming.load.tick('ol'); window.jstiming.report(window.jstiming.load, null, document.location.protocol == 'https:' ? 'https://gg.google.com/csi' : null);">
+<div id="doc-contents">
+<h1 style="margin: auto 0cm;">
+Relation 3: Product-Producer
+</h1>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<font size="2">&nbsp;</font>
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 10pt;">
+<font size="3"><b>Preamble</b></font>
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 12pt;">
+<font size="2">Girju et al., (2005) name this relation "MAKE/PRODUCE"
+and define it as "an animated entity creates or manufactures another
+entity". They have two versions of it, depending on the directionality.
+For example in "honey bee" the modifier (honey) is the product and the
+head (bee) is the producer. In "GM car" the direction is reversed --
+the modifier (GM) is the producer and the head (car) is the product.<br>
+<br>
+Levi (1979) also has two versions of her "MAKE" relation, which differ
+by directionality: MAKE1 is "product-producer", while MAKE2 is
+"producer-product". Some examples of her MAKE1 are: "honeybee",
+"silkworm", "musical clock" and "sebaceous glands". Examples of MAKE2:
+"daisy chains", "snowball", "consonantal patterns" and "molecular
+chains".</font>
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 12pt;">
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 12pt;">
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 10pt;">
+<font size="4"><b>Definition</b></font>
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 12pt;">
+<font size="2">Product-Producer (<i>X</i>, <i>Y</i>) is true for a sentence <i>S</i> that mentions entities <i>X</i> and <i>Y</i> if and only if:<br>
+<br>
+</font><font size="2">(1) <i>S</i>, <i>X</i> and <i>Y</i> obey the guidelines at <i>http://docs.google.com/Doc?docid=dfhkmm46_0f63mfvf7&amp;hl=en</i></font>
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 12pt;">
+<font size="2">(2) the situation described in <i>S</i> entails the fact that <i>X</i> is a product of <i>Y</i>, or <i>Y</i> produces <i>X</i>.</font>
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 12pt;">
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 10pt;">
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 10pt;">
+<font size="3"><b>Definition – restrictions</b></font>
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 12pt;">
+<font size="2">(a) The producer should be actively involved in the process of bringing the product into existence <span style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">and not just serve as a raw material.</span></font>
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 12pt;">
+<font size="2"><span style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">(b)
+The product results from a process and was not present before the
+process: the product must differ from its raw materials in form or
+function.<br>
+</span></font>
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 12pt;">
+<font size="2"> (c) Tangible concrete objects, tangible substances, organisations and positions in organisations are acceptable Products.</font>
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 12pt;"><font size="2">
+(d) Creative works and information-bearing mental activities are
+acceptable Products. Emotions and purely reactive activities are not
+considered to be information-bearing. In the case of creative works,
+mechanical recording or performance of previously-existing works are
+not considered to be creative acts. Human performance is considered to
+be creative.<br></font>
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 12pt;"><font size="2">
+(e) Events, states and entities that are neither concrete nor information-bearing cannot be products.
+</font></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 12pt;"><font size="2">
+(f)</font><font size="2"><font size="3"> <font size="2">Events, states and non-concrete or non-organisational entities cannot be Producers.</font></font><br></font></p>
+<h3><font size="2">
+<font size="3">Definition – Overlaps
+</font></font></h3>
+<font size="2">Cause-Effect and Product-Producer are closely related:
+production of an entity inherently has a causal nature. The main
+distinguishing criterion is that Products must be concrete physical
+entities, whereas Effects must be events, states or none physical
+objects such as light or noise.<br><br>
+There is also potential overlap with Entity-Origin<i>.</i>
+The main difference between the two relations is that in the case of
+Product-Producer (X, Y), Y is actively involved in making X and in the
+case of Entity-Origin (X, Y) relation, Y is not actively involved.<br><br><br></font>
+<p class="MsoNormal" style="margin: 0cm 0cm 10pt;">
+<font size="3"><b>Positive examples</b></font>
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<font size="2">"The &lt;e1&gt;honey&lt;/e1&gt; &lt;e2&gt;bee&lt;/e2&gt;
+is the third insect genome published by scientists, after a lab
+workhorse, the fruit fly, and a health menace, the mosquito."</font>
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><font size="2">
+Product-Producer(e1,e2)<br></font></p><p class="MsoNormal" style="margin: 0cm 0cm 0pt;"></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<font size="2"><b>Comment: </b></font><font size="2">This is a typical
+example of Product-Producer. Honey is a tangible concrete object (c),
+and the bee is actively involved in producing it (a).</font>
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<font size="2"><br></font>
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<font size="2">"The goat, sheep, water buffalo, camel, and &lt;e1&gt;cow&lt;/e1&gt; all give nourishing &lt;e2&gt;milk&lt;/e2&gt;."<br></font> </p><p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><font size="2">Product-Producer</font><font size="2">(e2, e1)<br></font></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<font size="2"><b>Comment:</b> </font><font size="2">Milk is a tangible concrete substance (c), and the cow is actively involved in producing it (a).</font></p><p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><font size="2"><br></font></p><p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><font size="2">"The &lt;e1&gt;company&lt;/e1&gt; has manufactured its &lt;e2&gt;products&lt;/e2&gt; under that brand ever since."</font></p><p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><font size="2">Product-Producer</font><font size="2">(e2, e1)<br></font></p><p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><font size="2"><b>Comment:</b> Products are tangible entities (c) and the company is actively involved in producing its products (a).</font></p><p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><font size="2"><br></font></p><p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><font size="2">"&lt;e1&gt;Companies&lt;/e1&gt;
+that are oriented towards the use of computers or information
+technology to promote learning have created the
+&lt;e2&gt;role&lt;/e2&gt; of the chief knowledge officer."</font></p><p class="MsoNormal" style="margin: 0cm 0cm 0pt;"></p><p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><font size="2">Product-Producer</font><font size="2">(e2, e1)<br></font></p><p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><font size="2"><b>Comment: </b>The role is a position in an organisation (c) and the companies are actively involved in creating instances of that role (a).<br></font></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<font size="2"><br></font>
+</p><font size="2">
+The&lt;e1&gt;machine&lt;/e1&gt; makes &lt;e2&gt;bottle tops&lt;/e2&gt;."<br></font><font size="2">Product-Producer</font><font size="2">(e2, e1)<br><b>Comment</b>: </font>
+<font size="2">Bottle tops are tangible concrete objects (c), and under
+the default interpretation the machine is actively involved in
+producing it (a) and is not just an instrument. <br><br>
+"Baker's yeast &lt;e1&gt;enzymes&lt;/e1&gt; convert sugar (glucose,
+fructose) to &lt;e2&gt;ethanol&lt;/e2&gt; and carbon dioxide."<br></font><font size="2">Product-Producer</font><font size="2">(e2, e1)<br><b>Comment:</b>
+Ethanol is a tangible concrete substance (c) and the enzymes are
+actively involved in producing it (a). The sugars are changed in both
+form and function during the production process (b).<br><br>
+"The &lt;e1&gt;director&lt;/e1&gt; has finished his new &lt;e2&gt;film&lt;/e2&gt;."<br></font><font size="2">Product-Producer</font><font size="2">(e2, e1)</font><font size="2"><br><b>Comment:</b> A film is a creative work (e) and the director is actively involved in producing it (a).<br><br></font>
+<p style="background-color: rgb(255, 255, 255);"><font size="2">
+"The essence of the new &lt;e1&gt;philosophers&lt;/e1&gt;’
+&lt;e2&gt;theory&lt;/e2&gt; was to challenge the (French) stereotype
+that an intellectual was necessarily a left-wing intellectual, such as
+illustrated by Jean-Paul Sartre or, in a completely different stance,
+Michel Foucault." <br></font></p><p style="background-color: rgb(255, 255, 255);"><font size="2">Product-Producer</font><font size="2">(e2, e1)<br></font></p>
+<p style="background-color: rgb(255, 255, 255);">
+<font size="2"><b>Comment:</b> A theory is a creative work or
+information-bearing mental product (e) and the philosophers were
+actively involved in producing it (a).<br></font>
+</p>
+<font size="2"><br style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">"Upon
+prior &lt;e1&gt;statement&lt;/e1&gt; from the
+&lt;e2&gt;President&lt;/e2&gt; in case of reasons of emergency,
+national security, or public interest, and solely while such reasons
+remains, the State may subject the patent to a compulsory license at
+any time and, in such case, the National Bureau of Industrial Property
+may grant the requested licenses, regardless of the patent holder's
+right to compensation..."</span><br style="color: rgb(0, 0, 0);"></font><font size="2"><span style="color: rgb(0, 0, 0);">Product-Producer</span></font><font size="2"><span style="color: rgb(0, 0, 0);">(e1, e2)<br></span><b style="color: rgb(0, 0, 0);">Comment:</b> <span style="color: rgb(0, 0, 0);">Statements</span> <span style="color: rgb(0, 0, 0);">are creative works and thus restriction (d) is satisfied.<br><br><br></span></font>
+<p class="MsoNormal" style="margin: 0cm 0cm 10pt;">
+<font size="2"><b>Near-miss negative examples</b></font>
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 10pt;">
+</p>
+<p>
+<font size="2">"The &lt;e1&gt;machine&lt;/e1&gt; makes &lt;e2&gt;noise&lt;/e2&gt;.
+</font></p>
+<p><font size="2">Cause-Effect</font><font size="2">(e1, e2)<br></font></p><p><font size="2"><b>Comment:</b> The produced noise is neither a concrete object nor a creative work, so restriction (c) is violated.</font></p><p><font size="2"><br></font></p><p style="background-color: rgb(255, 255, 255);"><font size="2">
+"This 8 day &lt;e1&gt;music&lt;/e1&gt; &lt;e2&gt;clock&lt;/e2&gt; needs winding only once a week."
+</font></p>
+<p style="background-color: rgb(255, 255, 255);"><font size="2">Cause-Effect</font><font size="2">(e1, e2)<br></font></p><p style="background-color: rgb(255, 255, 255);"></p>
+<p style="background-color: rgb(255, 255, 255);">
+<font size="2"><b>Comment:</b> The music is a creative work, but it is not composed by the clock; see the discussion of performances under (d).<br></font>
+</p>
+<font size="2"><br></font>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<font size="2">"An &lt;e1&gt;arbitrageur&lt;/e1&gt; makes
+&lt;e2&gt;money&lt;/e2&gt; by taking advantage of a small price
+disparity, selling in one market while buying in the other."</font>
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><font size="2">Other(e1, e2)</font></p><p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><font size="2"><b>Comment:</b></font><font size="2"> "Making money" does not entail bringing money into existence, so condition (b) is violated.<br>
+</font>
+</p>
+<p style="background-color: rgb(255, 255, 255);">
+<font size="2"><br>
+"The reactor will aim to turn sea water into fuel by mimicking the way
+the &lt;e1&gt;sun&lt;/e1&gt; produces &lt;e2&gt;energy&lt;/e2&gt;."
+</font></p>
+<p style="background-color: rgb(255, 255, 255);"><font size="2">Cause-Effect</font><font size="2">(e1, e2)<br></font></p><p style="background-color: rgb(255, 255, 255);"></p>
+<p style="background-color: rgb(255, 255, 255);">
+<font size="2"><b>Comment</b>: The restriction (b) is violated, 'energy' is not a concrete physical object. <br></font></p>
+<p style="background-color: rgb(255, 255, 255);">
+<font size="2"><br>"That year, summer students at the VLA made the
+first discovery of &lt;e1&gt;radio emission&lt;/e1&gt; from a
+&lt;e2&gt;brown dwarf star&lt;/e2&gt;."
+</font></p>
+<p style="background-color: rgb(255, 255, 255);"></p><p style="background-color: rgb(255, 255, 255);"><font size="2">Cause-Effect</font><font size="2">(e2, e1)<br></font></p>
+<p style="background-color: rgb(255, 255, 255);">
+<font size="2"><b>Comment:</b> The restriction (c) is violated, 'emission' is not a concrete physical object.<br></font></p>
+<p>
+<font size="2"><br></font>
+</p>
+<p><font size="2">
+"All &lt;e1&gt;olive&lt;/e1&gt; &lt;e2&gt;oil&lt;/e2&gt; —which is, after all, fat—has 120 calories per tablespoon (33 kJ/mL)."
+</font></p>
+<p></p><p><font size="2">Entity-Origin</font><font size="2">(e2, e1)<br></font></p>
+<p>
+<font size="2"><b>Comment: </b>The sentence violates restriction (a) since the olive is only passively involved in the production of the oil.<br></font></p>
+<p>
+<font size="2"><br></font>
+</p>
+<p><font size="2">"She's working on a collar and lead made of
+&lt;e1&gt;alligator&lt;/e1&gt; &lt;e2&gt;leather&lt;/e2&gt; with
+diamond and gold charms."<br></font></p><p></p>
+<p><font size="2">Entity-Origin</font><font size="2">(e2, e1)<br></font></p>
+<p>
+<font size="2"><b>Comment:</b> The sentence violates restriction (a),
+since (under the default interpretation) the alligator is not actively
+participating in the production of the leather.</font></p><p><font size="2"><br></font></p><p><font size="2">
+"Bishop is out to settle his score with Claude Malloche, an
+international &lt;e1&gt;assassin&lt;/e1&gt; responsible for the
+&lt;e2&gt;death&lt;/e2&gt; of Bishop's brother."
+</font></p>
+<p style="background-color: rgb(255, 255, 255);"><font size="2">Cause-Effect</font><font size="2">(e1, e2)<br></font></p>
+<p style="background-color: rgb(255, 255, 255);"></p>
+<p>
+<font size="2"><b>Comment</b>: The sentence violates restriction (d), as death is an event. <br></font></p>
+<p>
+<font size="2"><br></font>
+</p>
+<p><font size="2">"At an individual level, mental
+&lt;e1&gt;illness&lt;/e1&gt; is one of the biggest causes of personal
+&lt;e2&gt;unhappiness&lt;/e2&gt; in our society."
+</font></p>
+<p style="background-color: rgb(255, 255, 255);"><font size="2">Cause-Effect</font><font size="2">(e1, e2)<br></font></p>
+<p style="background-color: rgb(255, 255, 255);"></p>
+<p>
+</p>
+<p>
+<font size="2"><b>Comment</b>: The sentence violates restriction (d),
+as illness and unhappiness are states. This should be
+Cause-Effect(illness, unhappiness).
+</font></p>
+<p>
+<font size="2"><br></font>
+</p>
+<p><font size="2">
+"&lt;e1&gt;War&lt;/e1&gt; only causes destruction and &lt;e2&gt;death&lt;/e2&gt;."
+</font></p>
+<p>
+</p><p style="background-color: rgb(255, 255, 255);"><font size="2">Cause-Effect</font><font size="2">(e1, e2)<br></font></p>
+<p style="background-color: rgb(255, 255, 255);"></p>
+<p>
+</p>
+<p>
+<font size="2"><b>Comment</b>: The sentence violates restriction (d), because war and death are events. <br></font></p>
+<p>
+<font size="2"><br></font>
+</p>
+<p><font size="2">
+"Playing a &lt;e1&gt;music&lt;e1&gt; &lt;e2&gt;instrument&lt;/e2&gt; opens up a lot of possibilities to enrich your life."
+</font></p>
+<p style="color: rgb(0, 0, 0);"></p><p style="color: rgb(0, 0, 0);"><font size="2">Cause-Effect</font><font size="2">(e2, e1)<br>
+</font></p>
+<p>
+<font size="2"><b>Comment</b>: The sentence violates restriction (a)
+since the instrument is only passively involved in the process of music
+production. Performance is only considered creative when done by a
+human (d).&nbsp;</font></p><p><font size="2"><br></font></p><p><font size="2">"&lt;e1&gt;Alcoholic beverages&lt;/e1&gt; that have a lower alcohol
+content (beer and wine) are produced by
+&lt;e2&gt;fermentation&lt;/e2&gt; of sugar."<br>
+Other(e1, e2)</font></p><p></p><p><font size="2"><b>Comment:</b> Fermentation is an event and by (f) cannot be a Producer. Alcoholic beverages are concrete substances and cannot be Effects. <br></font></p><p><font size="2"><br></font></p><p class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<font size="2">"The
+survival of spinoff Cray Computer Corp. as a fledgling in the
+&lt;e1&gt;supercomputer&lt;/e1&gt; &lt;e2&gt;business&lt;/e2&gt;
+appears to depend heavily on its chairman Seymour Cray."</font>
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><font size="2">Other(e1, e2)</font></p><p></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<font size="2"><b>Comment:</b> </font><font size="2">A supercomputer is
+a tangible concrete object, but "business" refers to the activity of
+making/selling supercomputers and cannot be a Producer.</font>
+</p><p>
+</p><br>
+<br clear="all">
+</div>
+</body></html>
